@@ -1,0 +1,8 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+<title>Custom Error</title>
+<div>
+    <h1>MVC Error</h1>
+    Controller: @Model.ControllerName < br />
+    Action: @Model.ActionName <br />
+    Message: @Model.Exception.Message
+</div>

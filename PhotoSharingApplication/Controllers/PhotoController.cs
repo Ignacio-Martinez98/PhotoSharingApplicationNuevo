@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace PhotoSharingApplication.Controllers
 {
+    [HandleError(View = "Error")]
     [ValueReporter]
     public class PhotoController : Controller
     {
@@ -91,6 +92,11 @@ namespace PhotoSharingApplication.Controllers
                 return File(photo.PhotoFile, photo.ImageMimeType);
             
             return null;
+        }
+        //Public function SlideShow() as ActionResult ???
+        public ActionResult SlideShow()
+        {
+            throw new NotImplementedException("The SlideShow action is not yet ready");
         }
     }
 }
